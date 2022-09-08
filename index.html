@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Search</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favico/favicon-32x32.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script type="module" src="./src/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="logo-center">
+            <a href="https://github.com/" target="_blank">
+                <img src="./img/GitHub-Logo.png" class="logo">
+            </a>
+        </div>
+        <form action="">
+            <input type="search" id="user" autocomplete="off" required>
+                <buton id="btn" class="fa fa-search"></buton>
+          </form>
+    </header>
+    <main class="container" id="main">
+        <div class="card">
+            <div class="center" id="graph">
+                <a href="" id="url" target="_blank">
+                    <img id="avatar" class="image" src="">
+                </a>
+                <h1 id="name"></h1>
+                <div class="card2">
+                    <div class="carde">
+                        <p id="bio"></p>
+                        <p id="repo"></p>
+                        <p id="followers"></p>
+                        <p id="following"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="centerlize" id="error">
+                <img class="error" src="./img/giphy.gif">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
